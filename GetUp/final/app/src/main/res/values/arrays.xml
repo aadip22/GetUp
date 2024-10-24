@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<array name="initial_slider_values">
+    <item>20.0</item>
+    <item>70.0</item>
+</array>
+    <array name="questions">
+        <item>Short Walk (750 steps in 15 minutes)</item>
+        <item>Short Jog (1500 steps in 15 minutes)</item>
+        <item>Long Walk (2000 steps in 40 minutes)</item>
+        <item>Long Jog (4000 steps in 40 minutes)</item>
+    </array>
+</resources>

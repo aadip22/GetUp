@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".StepActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="145dp"
+        android:text="Let's Get Moving!"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/stepCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="0"
+        android:textColor="#4CAF50"
+        android:textSize="72sp"
+        android:textStyle="bold" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/trophy_view"
+        android:layout_width="153dp"
+        android:layout_height="305dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:lottie_rawRes="@raw/trophy"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="41dp" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fail_view"
+        android:layout_width="153dp"
+        android:layout_height="305dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:lottie_rawRes="@raw/fail"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="41dp" />
+    <TextView
+        android:id="@+id/goalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chronometer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="Goal: 32/50 km" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/goalTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:progress="64"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_drawable" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/circular_shape"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chronometer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:text="---"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stepCountTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+    <Button
+        android:id="@+id/goNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="146dp"
+        android:backgroundTint="#4CAF50"
+        android:text="I'm done!" />
+    <ImageView
+        android:id="@+id/getuplogo"
+        android:layout_width="221dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logoview" />
+</RelativeLayout>
